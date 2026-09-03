@@ -11,10 +11,10 @@ This private repository publishes the Linux x86_64 prebuilt Doom Emacs package u
 - Compiled Straight build directories: `188` (`.local/straight/build-30.2`)
 - Generated profile: `.local/etc/@/init.30.2.el`
 - Asset: `doom-emacs-prebuilt.tar.zst`
-- Asset size: `634155490` bytes
-- Asset SHA-256: `ce73cb1de10cd4a9b03da93d88e0f9f7e1a4ea5f34efe7f86c4e3acc703d1ed2`
+- Asset size: `211635723` bytes
+- Asset SHA-256: `6233be38e1b299d0b1a13872843c33ce12173b3789a6c55465a19931d12858b0`
 
-The archive also contains the current Doom configuration and its small bootstrap dependency set. It deliberately excludes Doom envvars, Emacs cache/state, native eln cache, browser profiles, authinfo, keys, and temporary runtime files.
+All bundled Git repositories are one-commit shallow snapshots at their pinned HEADs; full history is deliberately excluded. The archive also contains the current Doom configuration and its small bootstrap dependency set. It deliberately excludes Doom envvars, Emacs cache/state, native eln cache, browser profiles, authinfo, keys, and temporary runtime files.
 
 ## ABI boundary
 
