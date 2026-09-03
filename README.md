@@ -1,6 +1,6 @@
 # Doom Emacs prebuilt release
 
-This private repository publishes the Linux x86_64 prebuilt Doom Emacs package used by `linux-setup` V2.
+This public repository publishes the Linux x86_64 prebuilt Doom Emacs package used by `linux-setup` V2.
 
 ## Current release
 
@@ -18,6 +18,6 @@ All bundled Git repositories are one-commit shallow snapshots at their pinned HE
 
 ## ABI boundary
 
-This is a prebuilt Linux x86_64 artifact, not a source-only Doom bundle. Its `.elc` files and any compiled native modules are built/tested with GNU Emacs 30.2 and the local Linux toolchain. V2 therefore reads `emacs --version` on the target and rejects a version mismatch; it does not silently fetch or rebuild the 203 repositories. The target must also provide a compatible x86_64 userspace/libc and the external programs required by the configuration. After extraction V2 runs Doom's local `sync --reload --no-env` only to regenerate absolute profile paths for the target home; this operation does not fetch packages.
+This is a prebuilt Linux x86_64 artifact, not a source-only Doom bundle. Its bundled build tree was produced with GNU Emacs 30.2 and the local Linux toolchain. The target must provide a compatible x86_64 userspace/libc and the configuration's external programs. After extraction V2 runs the bundled Doom locally with `sync --reload --no-env`, rebuilding the profile for the target's actual Emacs version without fetching package history.
 
 The source and Straight repositories remain in the archive for inspection/reproducibility, but their presence does not make byte-compiled output ABI-independent.
